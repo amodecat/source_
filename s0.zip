@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" href="https://static.assetlab.io/redirector-prod/3.167.0/release-refresh-light.css">
+<link rel="stylesheet" href="https://static.assetlab.io/redirector-prod/3.167.0/release-refresh.css">
+<link rel="stylesheet" href="https://static.assetlab.io/redirector-prod/3.167.0/release-refresh-light.css">
+
+<!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docute@3.4.12/dist/docute.css">
+<link rel="stylesheet" href="https://podcasters.spotify.com/_next/static/css/2c6e69867469479f.css"> -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<div id="aplayer"></div>
+<script src="https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js"></script>
+
+</head>
+<body>
+<main class="layout">
+    <div class="site-bg" data-test="landingpage-bg">
+    
+    <img src="https://linkstorage.linkfire.com/medialinks/images/6f1333cc-1fa6-4636-b64d-f4f340bc759b/artwork-440x440.jpg" data-test="landingpage-bg-image" role="presentation">
+</div>
+
+<div class="layout__cover js-cover" style="margin-bottom: 16px;">
+        
+    <div class="player" id="mp-container">
+        <div class="cover media-player-placeholder">
+                            <div class="cover__artwork">
+            <img class="cover__artwork-img" src="https://linkstorage.linkfire.com/medialinks/images/6f1333cc-1fa6-4636-b64d-f4f340bc759b/artwork-440x440.jpg" alt="Taylor Swift - folklore (deluxe version)">
+            </div>
+        </div>
+    <div class="media-player" id="media-player-0" data-test="music-player-wrapper"><div class="cover-container"><img class="cover-image" role="presentation" src="https://linkstorage.linkfire.com/medialinks/images/6f1333cc-1fa6-4636-b64d-f4f340bc759b/artwork-440x440.jpg"><div class="cover-overlay"></div></div><div class="visualizer" data-test="music-player-visualizer"><canvas width="0" height="0"></canvas></div></div></div>
+    </div>
+    <h1 data-test="layout-header-title" class="header__title" style="margin-bottom: 16px;">folklore (deluxe version)<br>Taylor Swift</h1>
+<!-- <div class="layout__content" data-test="layout-content" id="music-services1">
+    <nav id="music-services" data-test="music-service-list" class="music-service-list" role="navigation">
+        <div class="music-service-list__item1" data-test="music-service-list-item">
+            <div id="player1"></div>
+        </div>
+
+
+    </nav>
+</div> -->
+<script>
+  function add() {
+      document.getElementById('player1').removeEventListener('click', add);
+
+      window.ap = new APlayer({
+      container: document.getElementById('player1'),
+      autoplay: true,
+      audio: [
+      {
+          name: 'the 1',
+          artist: 'Taylor Swift',
+          url: 'https://cloud.wujiyan.cc/f/Km0To/the%201.wav',
+          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+      },
+      {
+          name: 'cardigan',
+          artist: 'Taylor Swift',
+          url: 'https://cloud.wujiyan.cc/f/gArU0/cardigan.wav',
+          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+      },
+      {
+          name: 'the last great american dynasty',
+          artist: 'Taylor Swift',
+          url: 'https://cloud.wujiyan.cc/f/v1yfM/the%20last%20great%20american%20dynasty.wav',
+          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+      },
+      {
+          name: 'exile',
+          artist: 'Taylor Swift,Bon Iver',
+          url: 'https://cloud.wujiyan.cc/f/nvEUn/exile.wav',
+          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+      },
+      {
+          name: 'my tears ricochet',
+          artist: 'Taylor Swift',
+          url: 'https://cloud.wujiyan.cc/f/w1Zi4/my%20tears%20ricochet.wav',
+          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+      },
+      {
+          name: 'mirrorball',
+          artist: 'Taylor Swift',
+          url: 'https://cloud.wujiyan.cc/f/pDXU0/mirrorball.wav',
+          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+      },
+      {
+          name: 'seven',
+          artist: 'Taylor Swift',
+          url: 'https://cloud.wujiyan.cc/f/B71cW/seven.wav',
+          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+      },
+      {
+          name: 'august',
+          artist: 'Taylor Swift',
+          url: 'https://cloud.wujiyan.cc/f/bokiy/august.wav',
+          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+      },
+      {
+          name: 'this is me trying',
+          artist: 'Taylor Swift',
+          url: 'https://cloud.wujiyan.cc/f/1jyiB/this%20is%20me%20trying.wav',
+          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+      },
+      {
+          name: 'illicit affairs',
+          artist: 'Taylor Swift',
+          url: 'https://cloud.wujiyan.cc/f/jr9ug/illicit%20affairs.wav',
+          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+      },
+      {
+          name: 'invisible string',
+          artist: 'Taylor Swift',
+          url: 'https://cloud.wujiyan.cc/f/q48iw/invisible%20string.wav',
+          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+      },
+      {
+          name: 'mad woman',
+          artist: 'Taylor Swift',
+          url: 'https://cloud.wujiyan.cc/f/qzofw/mad%20woman.wav',
+          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+      },
+      {
+          name: 'epiphany',
+          artist: 'Taylor Swift',
+          url: 'https://cloud.wujiyan.cc/f/NEyTY/epiphany.wav',
+          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+      },
+      {
+          name: 'betty',
+          artist: 'Taylor Swift',
+          url: 'https://cloud.wujiyan.cc/f/VzeCM/betty.wav',
+          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+      },
+      {
+          name: 'peace',
+          artist: 'Taylor Swift',
+          url: 'https://cloud.wujiyan.cc/f/Y8Nhl/peace.wav',
+          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+      },
+      {
+          name: 'hoax',
+          artist: 'Taylor Swift',
+          url: 'https://cloud.wujiyan.cc/f/2xZuk/hoax.wav',
+          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+      },
+      {
+          name: 'the lakes (bonus track)',
+          artist: 'Taylor Swift',
+          url: 'https://cloud.wujiyan.cc/f/ljDTm/the%20lakes%20%28bonus%20track%29.wav',
+          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+      },
+      {
+          name: 'folklore (deluxe version)',
+          artist: 'Taylor Swift',
+          url: 'https://cloud.wujiyan.cc/f/Za2UK/CDImage.wav',
+          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+      }
+  ]
+  });
+  }
+  </script>
+
+<div class="layout__content" data-test="layout-content" id="music-services1">
+    <nav id="music-services" data-test="music-service-list" class="music-service-list" role="navigation">
+
+      <div class="music-service-list__item1" data-test="music-service-list-item">
+            <div id="player1" style="padding-bottom:0px;"><button class="docute-button-" onclick="add()">listen now !</button></div>
+
+          </div>
+      
+      
+      
+      <div class="music-service-list__item" data-test="music-service-list-item">
+            <a id="7a586f9f-9e2d-4383-83cc-b2aa5bd1798d" data-media-serviceid="7a586f9f-9e2d-4383-83cc-b2aa5bd1798d" data-linkid="b99762a1-8174-41e6-939e-d57b524bc664" data-carousel="false" class="music-service-list__link js-redirect" href="qqmusic://qq.com/ui/album?p=%7B%22id%22%3A%2213889899%22%7D&source=https%3A%2F%2Fi.y.qq.com%2Fn2%2Fm%2Fshare%2Fdetails%2Falbum.html%3F%26albumId%3D13889899%26appshare%3Dandroid_qq%26appversion%3D11100008%26channelId%3D10036163%26hosteuin%3Dnull%26openinqqmusic%3D1%26platform%3D11%26ADTAG%3Dcbshare" data-uri="spotify://album/1pzvBxYgT6OVwJLtHkrdQK?utm_campaign=fAfTD_96_fmly&amp;utm_source=Original_Original&amp;utm_medium=Original&amp;utm_content=b99762a1-8174-41e6-939e-d57b524bc664_none_Taylor%2BSwift_none_folklore%2B%2528deluxe%2Bversion%2529_none_20200818_https%253A%252F%252Fcn.bing.com%252F_universal-international_JP_taylor.lnk.to%2Ffolklore_Deluxe" data-marketing-consent="" data-voucher-enabled="" data-app-type="manual" data-test="music-service-list-link" data-label="spotify" data-category="service" data-category-type="play" data-action="Play" data-rank="3">
+          
+          <div class="music-service-list__content">
+            <img class="music-service-list__img" data-test="music-service-item-image" src="https://services.linkfire.com/logo_qqcom_onlight.svg" alt="Spotify" longdesc="qqmusic://qq.com/ui/album?p=%7B%22id%22%3A%2213889899%22%7D&source=https%3A%2F%2Fi.y.qq.com%2Fn2%2Fm%2Fshare%2Fdetails%2Falbum.html%3F%26albumId%3D13889899%26appshare%3Dandroid_qq%26appversion%3D11100008%26channelId%3D10036163%26hosteuin%3Dnull%26openinqqmusic%3D1%26platform%3D11%26ADTAG%3Dcbshare">
+            <button class="btn music-service-list__btn" data-test="music-service-item-button" tabindex="-1" title="Play" data-listener="true">
+              <span class="btn-label" data-test="music-service-item-button-label">Play</span>
+            </button>
+          </div>
+        </a>
+          </div>
+      
+      
+      
+      <div class="music-service-list__item" data-test="music-service-list-item">
+            <a id="18976fd2-4365-49b5-86bc-f1e93d8465db" data-media-serviceid="18976fd2-4365-49b5-86bc-f1e93d8465db" data-linkid="b99762a1-8174-41e6-939e-d57b524bc664" data-carousel="false" class="music-service-list__link js-redirect" href="https://m.kugou.com/share/?chain=iNGj16CRV2&id=iNGj16CRV2#/" data-marketing-consent="" data-voucher-enabled="" data-app-type="manual" data-test="music-service-list-link" data-label="amazonmusic" data-category="service" data-category-type="play" data-action="Play" data-rank="4">
+          
+          <div class="music-service-list__content">
+            <img class="music-service-list__img" data-test="music-service-item-image" src="https://cloud.wujiyan.cc/f/mg2SQ/kugou.png" alt="Amazon Music (Streaming)" longdesc="https://m.kugou.com/share/?chain=iNGj16CRV2&id=iNGj16CRV2#/">
+            <button class="btn music-service-list__btn" data-test="music-service-item-button" tabindex="-1" title="Play" data-listener="true">
+              <span class="btn-label" data-test="music-service-item-button-label">Play</span>
+            </button>
+          </div>
+        </a>
+          </div>
+      
+      
+      
+      <div class="music-service-list__item" data-test="music-service-list-item">
+            <a id="b2a0e6eb-620f-473f-a6ec-f9397dd2d204" data-media-serviceid="b2a0e6eb-620f-473f-a6ec-f9397dd2d204" data-linkid="b99762a1-8174-41e6-939e-d57b524bc664" data-carousel="false" class="music-service-list__link js-redirect" href="orpheus://album/92895788/" data-marketing-consent="" data-voucher-enabled="" data-app-type="manual" data-test="music-service-list-link" data-label="itunes" data-category="service" data-category-type="download" data-action="Download" data-rank="5">
+          
+          <div class="music-service-list__content">
+            <img class="music-service-list__img" data-test="music-service-item-image" src="https://services.linkfire.com/logo_netease_onlight.svg" alt="netease" longdesc="orpheus://album/92895788/">
+            <button class="btn music-service-list__btn" data-test="music-service-item-button" tabindex="-1" title="Download" data-listener="true">
+              <span class="btn-label" data-test="music-service-item-button-label">Play</span>
+            </button>
+          </div>
+        </a>
+          </div>
+      
+      
+      
+      <div class="music-service-list__item" data-test="music-service-list-item">
+            <a id="20708006-5703-41c8-b13b-b6bb89e5c701" data-media-serviceid="20708006-5703-41c8-b13b-b6bb89e5c701" data-linkid="b99762a1-8174-41e6-939e-d57b524bc664" data-carousel="false" class="music-service-list__link js-redirect" href="https://1drv.ms/f/c/fe95642562cf971c/EoLhFLx5jW9LgYic6BiTr1IBGlp1RbfLwc0SkIV3B9jXaw?e=fL3U3q" data-marketing-consent="" data-voucher-enabled="" data-app-type="manual" data-test="music-service-list-link" data-label="youtube" data-category="service" data-category-type="play" data-action="Play" data-rank="6">
+          
+          <div class="music-service-list__content">
+            <img class="music-service-list__img" data-test="music-service-item-image" src="https://cloud.wujiyan.cc/f/4j4Fx/OneDrive.png" alt="YouTube" longdesc="https://1drv.ms/f/c/fe95642562cf971c/EoLhFLx5jW9LgYic6BiTr1IBGlp1RbfLwc0SkIV3B9jXaw?e=fL3U3q">
+            <button class="btn music-service-list__btn" data-test="music-service-item-button" tabindex="-1" title="Play" data-listener="true">
+              <span class="btn-label" data-test="music-service-item-button-label">Download</span>
+            </button>
+          </div>
+        </a>
+          </div>
+
+          <div class="music-service-list__item" data-test="music-service-list-item">
+            <a id="20708006-5703-41c8-b13b-b6bb89e5c702" data-media-serviceid="20708006-5703-41c8-b13b-b6bb89e5c701" data-linkid="b99762a1-8174-41e6-939e-d57b524bc664" data-carousel="false" class="music-service-list__link js-redirect" href="https://pan.quark.cn/s/7d04828c2a5f" data-marketing-consent="" data-voucher-enabled="" data-app-type="manual" data-test="music-service-list-link" data-label="youtube" data-category="service" data-category-type="play" data-action="Play" data-rank="6">
+          
+          <div class="music-service-list__content">
+            <img class="music-service-list__img" data-test="music-service-item-image" src="https://cloud.wujiyan.cc/f/dRrID/quark.png" alt="YouTube" longdesc="https://pan.quark.cn/s/7d04828c2a5f">
+            <button class="btn music-service-list__btn" data-test="music-service-item-button" tabindex="-1" title="Play" data-listener="true">
+              <span class="btn-label" data-test="music-service-item-button-label">Download</span>
+            </button>
+          </div>
+        </a>
+          </div>
+          <div class="music-service-list__item" data-test="music-service-list-item">
+            <a id="20708006-5703-41c8-b13b-b6bb89e5c703" data-media-serviceid="20708006-5703-41c8-b13b-b6bb89e5c701" data-linkid="b99762a1-8174-41e6-939e-d57b524bc664" data-carousel="false" class="music-service-list__link js-redirect" href="https://www.alipan.com/s/k4ptbD3aX3J" data-marketing-consent="" data-voucher-enabled="" data-app-type="manual" data-test="music-service-list-link" data-label="youtube" data-category="service" data-category-type="play" data-action="Play" data-rank="6">
+          
+          <div class="music-service-list__content">
+            <img class="music-service-list__img" data-test="music-service-item-image" src="https://gw.alicdn.com/imgextra/i2/O1CN012zI3pB1XLS21rJ9Je_!!6000000002907-55-tps-108-24.svg" alt="YouTube" longdesc="https://www.alipan.com/s/k4ptbD3aX3J">
+            <button class="btn music-service-list__btn" data-test="music-service-item-button" tabindex="-1" title="Play" data-listener="true">
+              <span class="btn-label" data-test="music-service-item-button-label">Download</span>
+            </button>
+          </div>
+        </a>
+          </div>
+
+      </nav>
+        
+    <style>
+        .music-service-list__item--adcontainer {
+            display: flex;
+            justify-content: center;
+        }
+        .music-service-list__item--adcontainer .ad__item iframe {
+            max-height: 290px;
+            min-height: 250px;
+            height: unset;
+        }
+    </style>
+    
+                </div>
+                <script>
+                  function add() {
+                      document.getElementById('player1').removeEventListener('click', add);
+                
+                      window.ap = new APlayer({
+                      container: document.getElementById('player1'),
+                      autoplay: true,
+                      audio: [
+                      {
+                          name: 'the 1',
+                          artist: 'Taylor Swift',
+                          url: 'https://cloud.wujiyan.cc/f/Km0To/the%201.wav',
+                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+                      },
+                      {
+                          name: 'cardigan',
+                          artist: 'Taylor Swift',
+                          url: 'https://cloud.wujiyan.cc/f/gArU0/cardigan.wav',
+                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+                      },
+                      {
+                          name: 'the last great american dynasty',
+                          artist: 'Taylor Swift',
+                          url: 'https://cloud.wujiyan.cc/f/v1yfM/the%20last%20great%20american%20dynasty.wav',
+                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+                      },
+                      {
+                          name: 'exile',
+                          artist: 'Taylor Swift,Bon Iver',
+                          url: 'https://cloud.wujiyan.cc/f/nvEUn/exile.wav',
+                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+                      },
+                      {
+                          name: 'my tears ricochet',
+                          artist: 'Taylor Swift',
+                          url: 'https://cloud.wujiyan.cc/f/w1Zi4/my%20tears%20ricochet.wav',
+                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+                      },
+                      {
+                          name: 'mirrorball',
+                          artist: 'Taylor Swift',
+                          url: 'https://cloud.wujiyan.cc/f/pDXU0/mirrorball.wav',
+                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+                      },
+                      {
+                          name: 'seven',
+                          artist: 'Taylor Swift',
+                          url: 'https://cloud.wujiyan.cc/f/B71cW/seven.wav',
+                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+                      },
+                      {
+                          name: 'august',
+                          artist: 'Taylor Swift',
+                          url: 'https://cloud.wujiyan.cc/f/bokiy/august.wav',
+                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+                      },
+                      {
+                          name: 'this is me trying',
+                          artist: 'Taylor Swift',
+                          url: 'https://cloud.wujiyan.cc/f/1jyiB/this%20is%20me%20trying.wav',
+                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+                      },
+                      {
+                          name: 'illicit affairs',
+                          artist: 'Taylor Swift',
+                          url: 'https://cloud.wujiyan.cc/f/jr9ug/illicit%20affairs.wav',
+                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+                      },
+                      {
+                          name: 'invisible string',
+                          artist: 'Taylor Swift',
+                          url: 'https://cloud.wujiyan.cc/f/q48iw/invisible%20string.wav',
+                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+                      },
+                      {
+                          name: 'mad woman',
+                          artist: 'Taylor Swift',
+                          url: 'https://cloud.wujiyan.cc/f/qzofw/mad%20woman.wav',
+                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+                      },
+                      {
+                          name: 'epiphany',
+                          artist: 'Taylor Swift',
+                          url: 'https://cloud.wujiyan.cc/f/NEyTY/epiphany.wav',
+                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+                      },
+                      {
+                          name: 'betty',
+                          artist: 'Taylor Swift',
+                          url: 'https://cloud.wujiyan.cc/f/VzeCM/betty.wav',
+                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+                      },
+                      {
+                          name: 'peace',
+                          artist: 'Taylor Swift',
+                          url: 'https://cloud.wujiyan.cc/f/Y8Nhl/peace.wav',
+                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+                      },
+                      {
+                          name: 'hoax',
+                          artist: 'Taylor Swift',
+                          url: 'https://cloud.wujiyan.cc/f/2xZuk/hoax.wav',
+                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+                      },
+                      {
+                          name: 'the lakes (bonus track)',
+                          artist: 'Taylor Swift',
+                          url: 'https://cloud.wujiyan.cc/f/ljDTm/the%20lakes%20%28bonus%20track%29.wav',
+                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+                      },
+                      {
+                          name: 'folklore (deluxe version)',
+                          artist: 'Taylor Swift',
+                          url: 'https://cloud.wujiyan.cc/f/Za2UK/CDImage.wav',
+                          cover: 'https://cloud.wujiyan.cc/f/QQesz/cover.jpg',
+                      }
+                  ]
+                  });
+                  }
+                  </script>
+                
+</main>
+<style>
+.music-service-list__img {
+    float: left;
+    margin: .5rem;
+    width: 125px;
+    height: min-content;
+}
+@media screen and (max-width: 504px) {
+    body {
+        margin-top: 36px;
+        margin-bottom: 36px;
+    }
+}
+.music-service-list__item1 {
+    margin: 0;
+    padding: 0 0px;
+    -webkit-transition: background-color .1s ease;
+    transition: background-color .1s ease;
+}
+.layout__content1 {
+    display: none;
+}
+.aplayer {
+    padding-bottom: 0px! important;
+    margin: 0px! important;
+    text-align: left! important;  
+}
+.layout::before {
+    width: 0;
+    height: 100%;
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+}
+.layout {
+    width: 320px;
+    margin: 0 auto;
+    text-align: center;
+}
+.docute-button{width: 300px;border:2px solid #333;background-color:#ffffff00;cursor:pointer;outline:none;border-radius:33px;padding:5px 16px;font-size:13px;line-height: 1.5;font-weight:700;transition:background-color .3s ease}
+.docute-button:hover{width: 300px;color:#ffffff00;background-color:#333;
+}
+.docute-button-{height: 72px;margin: 0px! important;width: 320px;color:#ffffff;background-color:#008c25;border:0px solid #008c25;cursor:pointer;outline:none;border-radius:0;padding:5px 16px;font-size:15px;line-height: 1.5;font-weight:700;transition:background-color .3s ease
+}.docute-button-:hover{height: 72px;margin: 0px! important;width: 320px;color:#008c25;border:0px solid #008c25;background-color:#ffffff;cursor:pointer;outline:none;border-radius:0;padding:5px 16px;font-size:15px;line-height: 1.5;font-weight:700;transition:background-color .3s ease}</style>
+</body>
